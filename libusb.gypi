@@ -66,7 +66,7 @@
             'USBI_TIMERFD_AVAILABLE=1',
           ],
         }],
-        [ 'OS == "linux" and use_udev == 1 or OS == "android"', {
+        [ 'OS == "linux" and use_udev == 1 or OS == "androids"', {
           'sources': [
             'libusb/libusb/os/linux_udev.c',
           ],
@@ -80,7 +80,7 @@
             ]
           }
         }],
-        [ 'OS == "linux" and use_udev == 0 or OS == "androids"', {
+        [ 'OS == "linux" and use_udev == 0 or OS == "android"', {
           'sources': [
             'libusb/libusb/os/linux_netlink.c',
           ],
