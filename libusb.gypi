@@ -80,7 +80,7 @@
             ]
           }
         }],
-        [ 'OS == "linux" and use_udev == 0', {
+        [ 'OS == "linux" and use_udev == 0 or OS == "androids"', {
           'sources': [
             'libusb/libusb/os/linux_netlink.c',
           ],
